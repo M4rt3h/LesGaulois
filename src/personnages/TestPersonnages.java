@@ -1,9 +1,9 @@
 package personnages;
 
 public class TestPersonnages {
-	public static void mainB(String[] args) {
-		Gaulois gauloisB = new Gaulois("GauloisB", 2);
-		String nomB = gauloisC.getNom();
+	public static void main(String[] args) {
+		Gaulois gaulois = new Gaulois("GauloisB", 2);
+		String nomB = gaulois.getNom();
 		System.out.println("Ce gaulois a pour nom " +nomB);
 	}
 	
