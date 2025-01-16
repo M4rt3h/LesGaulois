@@ -11,9 +11,19 @@ public class TestGaulois {
 		asterix.parler("Bonjour à tous");
 		
 		Romain minus = new Romain("Minus", 6);
+		minus.parler("UN GAU… UN GAUGAU…");
 		
-		minus.recevoirCoup(2);
+		//for (int coup = 0; coup<2; coup++) {
+		//	minus.recevoirCoup(3);
+		//}
+		
+		//asterix.frapper(minus);
+		
+		for (int coup=0; coup<3; coup++ ) {
+			asterix.frapper(minus);
 
+			
+		}
 	}
 	
 }

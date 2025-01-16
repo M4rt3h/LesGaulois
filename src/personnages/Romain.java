@@ -18,9 +18,14 @@ public class Romain {
 	}
 	
 	public void recevoirCoup(int forceCoup) {
-		this.force = this.force-forceCoup;
+		if (this.force-forceCoup <= 0) {
+			this.force = 0;
+			this.parler("J'abandone...");
+		}
+		else {
+			this.force = this.force-forceCoup;
+			this.parler("Aïe !");
 
-		
-		System.out.println("la force apres le coup : "+force);
+	}
 	}
 }

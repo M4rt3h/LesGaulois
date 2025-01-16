@@ -22,6 +22,11 @@ public class Gaulois {
 		String nomC = gauloisC.getNom();
 		System.out.println("Ce gaulois a pour nom " + nomC);
 	}
+	
+	public void frapper(Romain leRomain) {
+		System.out.println(this.nom + " envoie un grand coup dans la mâchoire de " + leRomain.getNom());
+		leRomain.recevoirCoup(force/3);
+	}
 
 }
 
