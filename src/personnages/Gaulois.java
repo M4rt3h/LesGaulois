@@ -16,17 +16,18 @@ public class Gaulois {
 	public String getNom() {
 		return nom;
 	}
+	
+	public void frapper(Romain leRomain) {
+		String nomRomain = leRomain.getNom();
+		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + nomRomain);
+		leRomain.recevoirCoup(force/3);
+	}
+
 
 	public static void main(String[] args) {
 		Gaulois gauloisC = new Gaulois("GauloisC", 3);
 		String nomC = gauloisC.getNom();
 		System.out.println("Ce gaulois a pour nom " + nomC);
 	}
-	
-	public void frapper(Romain leRomain) {
-		System.out.println(this.nom + " envoie un grand coup dans la mâchoire de " + leRomain.getNom());
-		leRomain.recevoirCoup(force/3);
-	}
-
 }
 
