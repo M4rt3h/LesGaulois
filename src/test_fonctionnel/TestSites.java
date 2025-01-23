@@ -46,6 +46,9 @@ public class TestSites {
 		leCamp.changerCommandant(brutus);
 		leCamp.changerCommandant(ballondebaudrus);
 		leVillage.changerChef(prolix);
+		
+		Gaulois test = new Gaulois("Le Druide",5);
+		test.parler("\ntest");
 
 	}
 }
