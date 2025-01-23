@@ -1,5 +1,4 @@
 package personnages;
-import personnages.Grade;
 
 public class Soldat extends Romain {
 	private Grade grade;
