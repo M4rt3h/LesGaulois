@@ -1,8 +1,15 @@
 package personnages;
+import personnages.Grade;
 
 public class Soldat extends Romain {
-	public Soldat(String nom, int force) {
+	private Grade grade;
+	
+	public Soldat(String nom, int force, personnages.Grade leGrade) {
 		super(nom, force);
+		this.grade = leGrade;
 	}
 	
+	public Grade getGrade() {
+		return grade;
+	}
 }
