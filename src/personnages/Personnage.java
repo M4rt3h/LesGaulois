@@ -3,15 +3,23 @@ package personnages;
 public abstract class Personnage {
 	private String nom;
 	private int force;
+	private float forcePotion=1;
 	
 	protected Personnage(String nom, int force) {
 		this.nom = nom;
 		this.force = force;
 	}
 	
+	protected void forcePotion(float laForcePotion) {
+		forcePotion = laForcePotion;
+	}
+	
 	public String getNom() {
 		return nom;
 	}
+
+	//Modifier pour que la puissance du coup soit multiplier par la force de la potion 
+	//qui ne peut pas etre < 1 (voir sujet)
 	
 	public void parler(String texte) {
 		System.out.println("Le " + donnerAuteur() + " " + getNom() + " : " + texte);
