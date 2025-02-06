@@ -11,7 +11,13 @@ public class Romain extends Personnage {
 		return "Romain";
 	}
 
+	
+	@Override
+	protected int forceCoup() {
 
+		return getForce();
+	}
+	
 
 }
 

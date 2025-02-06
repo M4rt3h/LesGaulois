@@ -9,13 +9,16 @@ public class Potion {
 		quantitePotion = laQuantite;
 	}
 	
-	boolean viteMaDose() {
-		if (quantitePotion >=1) {
+	public int getForcePotion() {
+		return forcePotion;
+	}
+		
+	boolean viteMaDose(Gaulois leGaulois) {  // Return True si le gaulois recois de la potion False sinon
+		boolean doseDistribue = quantitePotion >=1;
+		if (doseDistribue) {
+			leGaulois.setterForceEmplifie(forcePotion*leGaulois.getForce());	
 			quantitePotion --;
-			return true;
 		}
-		else {
-			return false;
-		}
+		return doseDistribue;
 	}
 }
