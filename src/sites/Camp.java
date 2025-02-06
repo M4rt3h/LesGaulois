@@ -44,3 +44,5 @@ public class Camp {
 	}
 
 }
+
+//Test de modification par commit
